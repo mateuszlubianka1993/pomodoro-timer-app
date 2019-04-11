@@ -1,14 +1,15 @@
 import React from 'react';
+import './Header.css';
 
 const Header = () => {
 
     return (
-        <header className="header-container ui centered grid">
-            <div className="ui centered row header-row">
-                <div className="column">
+        <header className="header-container">
+            <div className="header-row">
+                <div className="header-icon">
                     <i class="far fa-clock"></i>
                 </div>
-                <div className="six wide column">
+                <div className="header-text">
                     <h1>Pomodoro Timer</h1>
                 </div>
             </div>

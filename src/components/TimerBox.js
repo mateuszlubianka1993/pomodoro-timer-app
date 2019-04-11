@@ -1,4 +1,5 @@
 import React from 'react';
+import Timer from './Timer';
 import './TimerBox.css';
 
 const TimerBox = () => {
@@ -10,7 +11,7 @@ const TimerBox = () => {
                 <button className="ui button">Short break</button>
                 <button className="ui button">Long break</button>
             </div>
-            <div className="timer-box-item">Timer</div>
+            <Timer />
             <div className="ui icon buttons timer-box-item">
                 <button className="ui button">
                     <i className="play icon"></i>

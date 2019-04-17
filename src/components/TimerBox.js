@@ -2,16 +2,16 @@ import React from 'react';
 import Timer from './Timer';
 import './TimerBox.css';
 
-const TimerBox = () => {
+const TimerBox = (props) => {
 
     return (
         <div className="timer-box-container">
             <div className="green ui buttons timer-box-item">
-                <button className="ui button">Let's work</button>
-                <button className="ui button">Short break</button>
-                <button className="ui button">Long break</button>
+                <button className="ui button" onClick={props.work}>Let's work</button>
+                <button className="ui button" onClick={props.shortBreak}>Short break</button>
+                <button className="ui button" onClick={props.longBreak}>Long break</button>
             </div>
-            <Timer />
+            <Timer time={props.time}/>
             <div className="ui icon buttons timer-box-item">
                 <button className="ui button">
                     <i className="play icon"></i>

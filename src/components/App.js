@@ -14,7 +14,7 @@ class App extends React.Component {
   };
 
   shortBreak = () => {
-    this.setState({time: 300})
+    this.setState({time: 5})
   };
 
   work = () => {
@@ -24,11 +24,11 @@ class App extends React.Component {
   start = () => {
     this.setState({startFlag: true})
       const counter = () => {
-        if(this.state.startFlag===true) {
+        if(this.state.startFlag===true && this.state.time > 0) {
           this.setState({time: this.state.time -1})
         }
       }
-      if(this.state.startFlag===true) {
+      if(this.state.startFlag===true && this.state.time > 0) {
         setInterval(counter, 1000);
       }
   }

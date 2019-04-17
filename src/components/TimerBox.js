@@ -11,16 +11,15 @@ const TimerBox = (props) => {
                 <button className="ui button" onClick={props.shortBreak}>Short break</button>
                 <button className="ui button" onClick={props.longBreak}>Long break</button>
             </div>
-            <Timer time={props.time}/>
+            <div className="timer-box-item">
+                <Timer time={props.time}/>
+            </div>
             <div className="ui icon buttons timer-box-item">
-                <button className="ui button" onClick={props.start}>
+                <button className="ui button green" onClick={props.start}>
                     <i className="play icon"></i>
                 </button>
-                <button className="ui button" onClick={props.stop}>
+                <button className="ui button green" onClick={props.stop}>
                     <i className="pause icon"></i>
-                </button>
-                <button className="ui button">
-                    <i className="history icon"></i>
                 </button>
             </div>
         </div>

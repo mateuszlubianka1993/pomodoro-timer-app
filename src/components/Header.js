@@ -7,10 +7,10 @@ const Header = () => {
         <header className="header-container">
             <div className="header-row">
                 <div className="header-icon">
-                    <i className="far fa-clock"></i>
+                    <i className="far fa-clock green-text"></i>
                 </div>
                 <div className="header-text">
-                    <h1>Pomodoro Timer</h1>
+                    <h1><span className="green-text">P</span>omodoro <span className="green-text">T</span>imer</h1>
                 </div>
             </div>
         </header>

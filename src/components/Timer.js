@@ -1,4 +1,5 @@
 import React from 'react';
+import './Timer.css';
 
 const Timer = (props) => {
     
@@ -7,7 +8,7 @@ const Timer = (props) => {
         let sec = allTime - minutes*60;
     return (
         <div className="timer-container">
-            <div>{minutes}:{sec}</div>
+            <div className="time-display-box">{minutes}:{sec}</div>
         </div>
     );
 };

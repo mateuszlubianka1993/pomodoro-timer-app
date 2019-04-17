@@ -7,7 +7,7 @@ const Header = () => {
         <header className="header-container">
             <div className="header-row">
                 <div className="header-icon">
-                    <i class="far fa-clock"></i>
+                    <i className="far fa-clock"></i>
                 </div>
                 <div className="header-text">
                     <h1>Pomodoro Timer</h1>

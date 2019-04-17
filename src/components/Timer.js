@@ -4,7 +4,7 @@ const Timer = () => {
     
     return (
         <div className="timer-container">
-        
+            <div>Timer</div>
         </div>
     );
 };

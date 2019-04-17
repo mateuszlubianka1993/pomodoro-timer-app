@@ -5,20 +5,36 @@ import TimerBox from './TimerBox';
 class App extends React.Component {
   
   state = {
-    start: false,
-    time: 20
+    startFlag: true,
+    time: 1200
   }
 
   longBreak = () => {
-    this.setState({time: 25})
+    this.setState({time: 1500})
   };
 
   shortBreak = () => {
-    this.setState({time: 5})
+    this.setState({time: 300})
   };
 
   work = () => {
-    this.setState({time: 20})
+    this.setState({time: 1200})
+  };
+
+  start = () => {
+    this.setState({startFlag: true})
+      const counter = () => {
+        if(this.state.startFlag===true) {
+          this.setState({time: this.state.time -1})
+        }
+      }
+      if(this.state.startFlag===true) {
+        setInterval(counter, 1000);
+      }
+  }
+
+  stop = () => {
+    this.setState({startFlag: false})
   };
 
   render() {
@@ -30,6 +46,8 @@ class App extends React.Component {
           longBreak={this.longBreak}
           shortBreak={this.shortBreak}
           work={this.work}
+          start={this.start}
+          stop={this.stop}
         />
       </div>
     );

@@ -13,10 +13,10 @@ const TimerBox = (props) => {
             </div>
             <Timer time={props.time}/>
             <div className="ui icon buttons timer-box-item">
-                <button className="ui button">
+                <button className="ui button" onClick={props.start}>
                     <i className="play icon"></i>
                 </button>
-                <button className="ui button">
+                <button className="ui button" onClick={props.stop}>
                     <i className="pause icon"></i>
                 </button>
                 <button className="ui button">

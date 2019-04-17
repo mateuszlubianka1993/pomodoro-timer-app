@@ -14,7 +14,7 @@ class App extends React.Component {
   };
 
   shortBreak = () => {
-    this.setState({time: 5})
+    this.setState({time: 300})
   };
 
   work = () => {

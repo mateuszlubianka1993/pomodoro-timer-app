@@ -15,6 +15,7 @@ I made this app to learn basic skills in React.
 This is simple Pomodoro Timer App. 
 
 ## Live
+https://mateuszlubianka1993.github.io/pomodoro-timer-app/
 https://pomodoro-time-react-app.herokuapp.com/
 
 ## Contact

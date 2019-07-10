@@ -10,11 +10,17 @@
 }
 
 @media (max-width: 991px) {
+    .timer-box-container {
+        padding: 20px;
+    }
     .timer-box-item {
         width: 80%;
     }
 }
 @media (max-width: 495px) {
+    .timer-box-container {
+        padding: 10px;
+    }
     .timer-box-item {
         width: 95%;
     }

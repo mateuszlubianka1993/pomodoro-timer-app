@@ -7,9 +7,9 @@ const TimerBox = (props) => {
     return (
         <div className="timer-box-container">
             <div className="green ui buttons timer-box-item">
-                <button className="ui button" onClick={props.work}>Let's work</button>
-                <button className="ui button" onClick={props.shortBreak}>Short break</button>
-                <button className="ui button" onClick={props.longBreak}>Long break</button>
+                <button className="ui button" onClick={props.work}>Work</button>
+                <button className="ui button" onClick={props.shortBreak}>Short</button>
+                <button className="ui button" onClick={props.longBreak}>Long</button>
             </div>
             <div className="timer-box-item">
                 <Timer time={props.time}/>

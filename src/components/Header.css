@@ -36,3 +36,16 @@ h1 {
         margin-bottom: 25px;
     }
 }
+@media (max-width: 386px) {
+    .header-icon {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .header-container {
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+}
